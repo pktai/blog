@@ -48,12 +48,12 @@ export default props => {
       </Menu> */}
     </Header>
     <Layout>
-      <Sider width={300} style={{ background: '#fff', margin: '24px 24px 24px' }}>
+      <Sider width={300} style={{ background: '#fff', margin: '24px 24px 24px', borderRadius:20 }}>
         <Menu
           mode="inline"
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['sub1']}
-          style={{ height: '100%', borderRight: 0,boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px 0px 0px'
+          style={{ height: '100%' ,boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px 0px 0px', borderRadius:20
         }}
         >
           <SubMenu
@@ -100,7 +100,7 @@ export default props => {
           </SubMenu>
         </Menu>
       </Sider>
-      <Layout style={{ padding: '24px 24px 24px', 
+      <Layout style={{ padding: '24px 24px 24px', borderRadius:20
  }}>
         {/* <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
@@ -113,19 +113,19 @@ export default props => {
             padding: 24,
             margin: 0,
             minHeight: 1600,
-            boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px 21px 2px',
+            boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px 21px 2px',borderRadius:20
             // borderRadius: 15
           }}
         >
           Content
         </Content>
       </Layout>
-      <Sider width={300} style={{ background: '#fff', margin: '24px 24px 24px' }}>
+      <Sider width={300} style={{ background: '#fff', margin: '24px 24px 24px', borderRadius:20 }}>
         <Menu
           mode="inline"
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['sub1']}
-          style={{ height: '100%', borderRight: 0,boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px 0px 0px'
+          style={{ height: '100%', borderRight: 0,boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px 0px 0px', borderRadius:20
         }}
         >
           <SubMenu
