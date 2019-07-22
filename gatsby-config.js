@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: `/gatsby-tutorial`,
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
-    siteUrl: `https://pktai.github.io/gatsby-tutorial`,
+    siteUrl: `https://pktai.github.io/blog`,
   },
   plugins: [
     {
@@ -25,5 +25,22 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      },
+  },
+  {
+    resolve: "gatsby-plugin-less",
+    options: {
+      javascriptEnabled: true,
+      modifyVars: {
+        "primary-color": "#183C52",
+        "heading-color": "#777777"
+      }
+    }
+  }
+ 
   ],
 }
