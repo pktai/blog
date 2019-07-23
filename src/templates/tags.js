@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/body/layout";
 import { graphql, Link } from "gatsby";
 
 export default ({ data, pageContext }) => {

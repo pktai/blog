@@ -30,17 +30,16 @@ module.exports = {
       options: {
         style: true
       },
-  },
-  {
-    resolve: "gatsby-plugin-less",
-    options: {
-      javascriptEnabled: true,
-      modifyVars: {
-        "primary-color": "#183C52",
-        "heading-color": "#777777"
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          "primary-color": "#183C52",
+          "heading-color": "#777777"
+        }
       }
     }
-  }
- 
   ],
 }
