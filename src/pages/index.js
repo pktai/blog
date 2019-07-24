@@ -4,23 +4,27 @@ import { graphql, Link } from "gatsby";
 import './pages.css';
 
 export default ({ data }) => {
-  return (
-    <Layout>
-      <h1>Bài viết mới nhất</h1>
-      {data.allMarkdownRemark.edges.map(({ node }, index) =>
-        <div key={index}>
-          <ul class="tags">
-            <li><a class="tag">{node.frontmatter.tags[0]}</a></li>
-          </ul>
-          <h3>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-            <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
-          </h3>
-          <p>{node.excerpt}</p>
-        </div>
-      )}
-    </Layout>
-  )
+	return (
+		<Layout>
+			<h1>Bài viết mới nhất</h1>
+			{data.allMarkdownRemark.edges.map(({ node }, index) =>
+				<div key={index}>
+					<h3>
+						<Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+						<span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
+					</h3>
+					<div style={{display: 'flex'}}>
+						{node.frontmatter.tags.map((item, index) =>
+							<ul className="tags" key={index}>
+								<li><span className="tag">{item}</span></li>
+							</ul>
+						)}
+					</div>
+					<p>{node.excerpt}</p>
+				</div>
+			)}
+		</Layout>
+	)
 }
 
 export const query = graphql`
