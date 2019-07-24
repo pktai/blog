@@ -2,7 +2,7 @@ import React from "react";
 import "./layout.css";
 import "./antd.css";
 import { StaticQuery, graphql } from "gatsby";
-import { Layout } from 'antd';
+import { Layout, Spin } from 'antd';
 const { Header, Content, Sider } = Layout;
 
 
@@ -16,10 +16,14 @@ class IndexPage extends React.Component {
 			this.setState({ hidden: false });
 		}, 500);
 	}
+
 	render() {
 		const { children } = this.props;
 		return (
-			this.state.hidden ? <h1 className="center-hello">HELLO WORD</h1> :
+			this.state.hidden ? <div
+				className="center-hello">
+				<Spin tip="loading..."/>
+			</div> :
 				<StaticQuery
 					query={graphql`
       query {
