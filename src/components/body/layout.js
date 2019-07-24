@@ -7,25 +7,25 @@ const { Header, Content, Sider } = Layout;
 
 
 class IndexPage extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { hidden: true };
-	}
-	componentDidMount() {
-		setTimeout(() => {
-			this.setState({ hidden: false });
-		}, 100);
-	}
+  constructor(props) {
+    super(props);
+    this.state = { hidden: true };
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ hidden: false });
+    }, 100);
+  }
 
-	render() {
-		const { children } = this.props;
-		return (
-			this.state.hidden ? <div
-				className="center-hello">
-				<Spin tip="loading..."/>
-			</div> :
-				<StaticQuery
-					query={graphql`
+  render() {
+    const { children } = this.props;
+    return (
+      this.state.hidden ? <div
+        className="center-hello">
+        <Spin tip="loading..." />
+      </div> :
+        <StaticQuery
+          query={graphql`
       query {
         site {
           siteMetadata {
@@ -44,41 +44,32 @@ class IndexPage extends React.Component {
         }
       }
     `}
-					render={data => (
-						<Layout style={{
+          render={data => (
+            <Layout style={{
               fontSize: 20,
-							backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'
+              backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'
             }}>
-							<Header style={{ background: 'none' }}>
-								<div className="logo" />
-							</Header>
-							<Layout>
-								<Sider className="sider-cus">
-								</Sider>
-								<Layout style={{
-									padding: '10px 0 10px 0', borderRadius: 10
-								}}>
-									<Content
-										style={{
-											background: '#fff',
-											padding: 60,
-											margin: 0,
-											minHeight: '100vh',
-											boxShadow: 'rgba(176, 168, 168, 0.75) 0px 0px -1px -1px', borderRadius: 10
-											// borderRadius: 15
-										}}
-									>
-										{children}
-									</Content>
-								</Layout>
-								<Sider className="sider-cus">
-								</Sider>
-							</Layout>
-						</Layout>
-					)}
-				/>
-		)
-	}
+              <Header style={{ background: 'none' }}>
+                <div className="logo" />
+              </Header>
+              <Layout>
+                <Sider className="sider-cus">
+                </Sider>
+                <Layout style={{
+                  padding: '10px 0 10px 0', borderRadius: 10
+                }}>
+                  <Content className="content-cus">
+                    {children}
+                  </Content>
+                </Layout>
+                <Sider className="sider-cus">
+                </Sider>
+              </Layout>
+            </Layout>
+          )}
+        />
+    )
+  }
 }
 
 export default IndexPage;

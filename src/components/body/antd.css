@@ -20262,7 +20262,7 @@ textarea.ant-input-number {
 	-ms-flex: auto;
 	flex: auto;
 	/* fix firefox can't set height smaller than content on flex item */
-	min-height: 0;
+	min-height: 100vh;
 }
 
 .ant-layout-sider {

@@ -60,3 +60,11 @@ body {
 	font-family: 'DM Sans', sans-serif;
 
 }
+.tag-cus{
+	display: flex;
+}
+@media (max-width: 1080px) {
+ .tag-cus{
+	 display: inline-block;
+ }
+}

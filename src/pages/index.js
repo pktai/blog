@@ -13,7 +13,7 @@ export default ({ data }) => {
 						<Link to={node.fields.slug}>{node.frontmatter.title}</Link>
 						<span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
 					</h3>
-					<div style={{display: 'flex'}}>
+					<div className="tag-cus">
 						{node.frontmatter.tags.map((item, index) =>
 							<ul className="tags" key={index}>
 								<li><span className="tag">{item}</span></li>
