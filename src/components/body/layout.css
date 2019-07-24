@@ -7,7 +7,8 @@
 
 .ant-layout {
 	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-	background: none;
+  background: none;
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -33,12 +34,31 @@
 }
 
 .center-hello {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 	position: absolute;
-	width: 100px;
-	height: 50px;
-	top: 50%;
-	left: 50%;
-	margin-left: -50px;
-	/* margin is -0.5 * dimension */
-	margin-top: -100px;
+}
+/* body{
+  font-size: 20px
+} */
+
+@media (max-width: 1080px) {
+  .sider-cus {
+    display: none;
+  }
+  .ant-layout{
+    padding: 10px;
+  }
+  body{
+    font-size: 14px;
+  }
+}
+
+.sider-cus {
+  margin: 10px;
+  border-radius: 10px;
+  background: #fff;
 }

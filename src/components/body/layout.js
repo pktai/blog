@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
 	componentDidMount() {
 		setTimeout(() => {
 			this.setState({ hidden: false });
-		}, 500);
+		}, 100);
 	}
 
 	render() {
@@ -46,13 +46,14 @@ class IndexPage extends React.Component {
     `}
 					render={data => (
 						<Layout style={{
-							backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)',
-						}}>
+              fontSize: 20,
+							backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'
+            }}>
 							<Header style={{ background: 'none' }}>
 								<div className="logo" />
 							</Header>
 							<Layout>
-								<Sider width={300} style={{ background: '#fff', margin: 10, borderRadius: 10 }}>
+								<Sider className="sider-cus">
 								</Sider>
 								<Layout style={{
 									padding: '10px 0 10px 0', borderRadius: 10
@@ -70,7 +71,7 @@ class IndexPage extends React.Component {
 										{children}
 									</Content>
 								</Layout>
-								<Sider width={300} style={{ background: '#fff', margin: 10, borderRadius: 10 }}>
+								<Sider className="sider-cus">
 								</Sider>
 							</Layout>
 						</Layout>

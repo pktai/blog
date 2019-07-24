@@ -20269,7 +20269,7 @@ textarea.ant-input-number {
 	position: relative;
 	/* fix firefox can't set width smaller than content on flex item */
 	min-width: 0;
-	background: #001529;
+	background: #ffffff;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
