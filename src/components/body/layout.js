@@ -1,12 +1,14 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import "./layout.css";
 import "./antd.css";
 import { StaticQuery, graphql } from "gatsby";
-import { Layout, Spin } from 'antd';
+import { Layout, Spin, Icon } from 'antd';
 const { Header, Content, Sider } = Layout;
+const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
 
 
-class IndexPage extends React.Component {
+
+class IndexPage extends PureComponent {
   constructor(props) {
     super(props);
     this.state = { hidden: true };
@@ -14,7 +16,7 @@ class IndexPage extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ hidden: false });
-    }, 100);
+    }, 700);
   }
 
   render() {
@@ -22,7 +24,7 @@ class IndexPage extends React.Component {
     return (
       this.state.hidden ? <div
         className="center-hello">
-        <Spin tip="loading..." />
+        <Spin indicator={antIcon} tip="Tai Pham" />
       </div> :
         <StaticQuery
           query={graphql`
@@ -47,7 +49,7 @@ class IndexPage extends React.Component {
           render={data => (
             <Layout style={{
               fontSize: 20,
-              backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'
+              background: '#00c0aa'
             }}>
               <Header style={{ background: 'none' }}>
                 <div className="logo" />
@@ -56,7 +58,7 @@ class IndexPage extends React.Component {
                 <Sider className="sider-cus">
                 </Sider>
                 <Layout style={{
-                  padding: '10px 0 10px 0', borderRadius: 10
+                  padding: '10px 0 10px 0',
                 }}>
                   <Content className="content-cus">
                     {children}

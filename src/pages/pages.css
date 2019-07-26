@@ -56,8 +56,9 @@
 	border-left-color: rgb(9, 136, 196);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 }
 .tag-cus{
