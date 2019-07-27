@@ -1,4 +1,4 @@
-# gatsby-starter-hello-world
+<!-- # gatsby-starter-hello-world
 Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
@@ -10,4 +10,4 @@ Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com
 
 ## Running in development
 `gatsby develop`
-"# gatsby-tutorial" 
+"# gatsby-tutorial"  -->
