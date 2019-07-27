@@ -1,12 +1,14 @@
+/* Import lib */
 import React, { PureComponent } from "react";
-import "./layout.css";
-import "./antd.css";
 import { StaticQuery, graphql } from "gatsby";
 import { Layout, Spin, Icon } from 'antd';
+/* Import css */
+import "./layout.css";
+import "./antd.css";
+import "./beautiCode.css";
+/*declare variable */
 const { Header, Content, Sider } = Layout;
 const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
-
-
 
 class IndexPage extends PureComponent {
   constructor(props) {
@@ -49,7 +51,7 @@ class IndexPage extends PureComponent {
           render={data => (
             <Layout style={{
               fontSize: 20,
-              background: '#00c0aa'
+              background: 'rgb(181, 2, 93)'
             }}>
               <Header style={{ background: 'none' }}>
                 <div className="logo" />
@@ -58,7 +60,7 @@ class IndexPage extends PureComponent {
                 <Sider className="sider-cus">
                 </Sider>
                 <Layout style={{
-                  padding: '10px 0 10px 0',
+                  padding: '10px 0 40px 0',
                 }}>
                   <Content className="content-cus">
                     {children}

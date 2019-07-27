@@ -63,6 +63,7 @@ body {
 }
 .tag-cus{
 	display: flex;
+	padding-bottom: 10px;
 }
 @media (max-width: 1080px) {
  .tag-cus{

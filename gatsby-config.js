@@ -95,11 +95,34 @@ module.exports = {
         }
       }
     },
+    
+    //NOTE gatsby-plugin-favicon not support deployment prod.
+
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: "./src/images/favicon.png",
+    //   }
+    // },
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        logo: "./src/images/favicon.png",
+        // name: config.siteTitle,
+        // short_name: config.siteTitle,
+        // description: config.siteDescription,
+        // start_url: config.pathPrefix,
+        // background_color: config.backgroundColor,
+        // theme_color: config.themeColor,
+        display: "standalone",
+        icon: "./src/images/favicon.png",
+        // icons: [
+        //   {
+        //     src: "./src/images/favicon.png",
+        //     // sizes: "192x192",
+        //     // type: "image/png"
+        //   }
+        // ]
       }
-    }
+    },
   ],
 }

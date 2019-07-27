@@ -14,8 +14,8 @@ export default ({ data, pageContext }) => {
         <div key={index}>
           <h3>
             <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-            <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
           </h3>
+          <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
           <p>{node.excerpt}</p>
         </div>
       )}

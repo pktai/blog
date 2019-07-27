@@ -1,4 +1,5 @@
 import React from "react";
+import { Tag } from 'antd';
 import Layout from "../components/body/layout";
 import { graphql, Link } from "gatsby";
 import './pages.css';
@@ -6,19 +7,24 @@ import './pages.css';
 export default ({ data }) => {
 	return (
 		<Layout>
-			<h1>Bài viết mới nhất</h1>
+			<h1 style={{fontSize: '2em'}}>New Post</h1>
 			{data.allMarkdownRemark.edges.map(({ node }, index) =>
 				<div key={index}>
 					<h3>
 						<Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-						<span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
 					</h3>
-					<div className="tag-cus">
-						{node.frontmatter.tags.map((item, index) =>
-							<ul className="tags" key={index}>
-								<li><span className="tag">{item}</span></li>
-							</ul>
-						)}
+					<div style={{ display: 'grid' }}>
+						<span style={{ color: `#BBB`, fontSize: '14px', textAlign: 'right' }}
+						> Created date: {node.frontmatter.date}
+						</span>
+						<div className="tag-cus">
+							{node.frontmatter.tags.map((item, index) =>
+								// <ul className="tags" key={index}>
+								// 	<li><span className="tag">{item}</span></li>
+								// </ul>
+								<Tag color="magenta"> {item}</Tag>
+							)}
+						</div>
 					</div>
 					<p>{node.excerpt}</p>
 				</div>
