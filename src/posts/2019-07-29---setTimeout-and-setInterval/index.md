@@ -1,6 +1,6 @@
 ---
 title: van de ở setInterval và clearInterval
-date: "2019-29-07T07:40:32.169Z"
+date: "2019-07-29T07:40:32.169Z"
 categories: ["javascript"]
 tags: ["javascript"]
 ---
