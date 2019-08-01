@@ -1,8 +1,8 @@
 ---
-title: van de ở setInterval và clearInterval
+title: ComponentWillunmount
 date: "2019-08-01T07:40:32.169Z"
-categories: ["javascript"]
-tags: ["javascript"]
+categories: ["reactjs"]
+tags: ["reactjs"]
 ---
 khi sử dụng 1 function setInterval để xử lí một action ví dụ như: countDown 1 button 
 thì vấn đề khi mình sử dụng mà trong lúc chưa clearInterval thì sẽ xảy ra bug Warning
