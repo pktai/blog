@@ -5,4 +5,5 @@ categories: ["immutable", "javascript"]
 tags: ["immutable"]
 ---
 immutable targer: để tối ưu performace trong source.
+luu y cach su dung Object.assign.
 .... xem thêm.
