@@ -7,7 +7,7 @@ import "./layout.css";
 import "./antd.css";
 import "./beautiCode.css";
 /*declare variable */
-const { Header, Content, Sider } = Layout;
+const { Content } = Layout;
 const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
 
 class IndexPage extends PureComponent {
@@ -51,23 +51,23 @@ class IndexPage extends PureComponent {
           render={data => (
             <Layout style={{
               fontSize: 20,
-              background: 'rgb(181, 2, 93)'
+              background: "#ffffff"
             }}>
-              <Header style={{ background: 'none' }}>
+              {/* <Header style={{ background: 'none' }}>
                 <div className="logo" />
-              </Header>
-              <Layout>
-                <Sider className="sider-cus">
-                </Sider>
+              </Header> */}
+              <Layout style={{display: '-webkit-box'}}>
+                <div className="sider-cus">
+                </div>
                 <Layout style={{
-                  padding: '10px 0 40px 0',
+                  padding: '0 0 40px 0', boxShadow: '0 0 11px rgba(33,33,33,.2)',
                 }}>
                   <Content className="content-cus">
                     {children}
                   </Content>
                 </Layout>
-                <Sider className="sider-cus">
-                </Sider>
+                <div className="sider-cus">
+                </div>
               </Layout>
             </Layout>
           )}

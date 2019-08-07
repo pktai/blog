@@ -22,7 +22,7 @@ export default ({ data }) => {
 								// <ul className="tags" key={index}>
 								// 	<li><span className="tag">{item}</span></li>
 								// </ul>
-								<Tag color="magenta"> {item}</Tag>
+								<Tag key={index} color="magenta"> {item}</Tag>
 							)}
 						</div>
 					</div>
