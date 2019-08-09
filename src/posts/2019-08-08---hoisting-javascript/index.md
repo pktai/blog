@@ -25,6 +25,6 @@ Nhưng thực tế, đoạn code trên sẽ chuyển thành như sau:
 (function(){
     var x;
     console.log(x);
-    x = "abc";
+    x = "abc"; 
 })();
 ```
