@@ -4,7 +4,8 @@ date: "2019-08-07T19:40:32.169Z"
 categories: ["javascript"]
 tags: ["javascript"]
 ---
-Các thuộc tính trên chuỗi nguyên mẫu và các thuộc tính không có khả năng đếm được thì không thể sao chép. 
+Các thuộc tính trên chuỗi nguyên mẫu và các 
+thuộc tính không có khả năng đếm được thì không thể sao chép. 
 ```javascript
 var obj = Object.create({ foo: 1 }, { // foo ở trên mắt xích prototype của obj.
   bar: {
