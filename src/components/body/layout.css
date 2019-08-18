@@ -141,7 +141,7 @@ body {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
 	transition: all 0.5s ease;
-	font-weight: 100;
+	/* font-weight: 100; */
 	overflow: hidden;
 }
 
@@ -539,6 +539,10 @@ body {
 	.foot-form-title {
 		width: autopx;
 	}
+
+	.card-sub-title {
+		display: none;
+	}
 }
 
 @media (max-width: 480px) {
@@ -546,4 +550,12 @@ body {
 		width: 160px;
 		padding-left: 12%;
 	}
+
+	.card-sub-title {
+		display: none;
+	}
+}
+
+a {
+	text-decoration: none
 }
