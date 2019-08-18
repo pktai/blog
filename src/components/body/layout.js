@@ -68,7 +68,7 @@ class Layout extends PureComponent {
                   <div className="badge">
                     <div className="badge-header" />
                     <img
-                      // src="../../images/TaiPham.jpg"
+                      // src="/src/images/TaiPham.jpg"
                       className="badge-avatar"
                     />
                     <div className="badge-body">

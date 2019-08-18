@@ -101,7 +101,7 @@ body {
 }
 
 .flex-sect {
-	background-color: #f1f1f1;
+	background-image: url("../../images/background.png");
 	padding: 100px 0;
 	font-family: Helvetica, serif;
 	align-self: auto;

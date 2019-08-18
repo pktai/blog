@@ -11,10 +11,13 @@ export default ({ data }) => {
         <div className="card" key={index}>
           {/* <div className="card-header" /> */}
           <div className="card-body">
-            <Link style={{fontSize: 20, paddingBottom: 10}} to={node.fields.slug}>{node.frontmatter.title}</Link>
-            <div className="card-sub-title">
-              Created date: {node.frontmatter.date}
-            </div>
+            <Link
+              style={{ fontSize: 20, paddingBottom: 10 }}
+              to={node.fields.slug}
+            >
+              {node.frontmatter.title}
+            </Link>
+            <div className="card-sub-title">{node.frontmatter.date}</div>
             <div className="card-desc">{node.excerpt}</div>
           </div>
         </div>
