@@ -11,13 +11,11 @@ body {
 }
 
 .header-banner {
-	padding-top: 35px;
-	padding-bottom: 100px;
 	color: #ffffff;
 	font-family: Helvetica, serif;
 	font-weight: 100;
-	background-image: url('//grapesjs.com/img/bg-gr-v.png'),
-		url('//grapesjs.com/img/work-desk.jpg');
+	background-image: url('../../images/bg-gr-v.png'),
+		url('../../images/work-desk.jpg');
 	background-attachment: scroll, scroll;
 	background-position: left top, center center;
 	background-repeat: repeat-y, no-repeat;
@@ -103,7 +101,7 @@ body {
 }
 
 .flex-sect {
-	background-color: #fafafa;
+	background-color: #f1f1f1;
 	padding: 100px 0;
 	font-family: Helvetica, serif;
 	align-self: auto;
@@ -137,9 +135,9 @@ body {
 
 .card {
 	background-color: white;
-	height: 300px;
+	height: 150px;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
 	transition: all 0.5s ease;
@@ -148,8 +146,8 @@ body {
 }
 
 .card:hover {
-	margin-top: -5px;
-	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+	margin-top: -1px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
@@ -173,11 +171,13 @@ body {
 	color: #b3b3b3;
 	font-size: 1em;
 	margin-bottom: 15px;
+	float: right;
 }
 
 .card-desc {
 	font-size: 0.85rem;
 	line-height: 17px;
+	padding-top: 12px;
 }
 
 .am-sect {
@@ -319,7 +319,7 @@ body {
 }
 
 .footer-under {
-	background-color: #312833;
+	background-color: #66003b;
 	padding-bottom: 100px;
 	padding-top: 100px;
 	min-height: 500px;
@@ -471,8 +471,8 @@ body {
 
 .badge-header {
 	height: 115px;
-	background-image: url('//grapesjs.com/img/bg-gr-v.png'),
-		url('//grapesjs.com/img/work-desk.jpg');
+	background-image: url('../../images/bg-gr-v.png'),
+		url('../../images/work-desk.jpg');
 	background-position: left top, center center;
 	background-attachment: scroll, fixed;
 	overflow: hidden;
@@ -512,7 +512,7 @@ body {
 
 .badge-foot {
 	color: #fff;
-	background-color: #a290a5;
+	background-color: rgb(102, 0, 59);
 	padding-top: 13px;
 	padding-bottom: 13px;
 	display: flex;

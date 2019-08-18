@@ -1,14 +1,14 @@
 /* Import lib */
 import React, { PureComponent } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Layout, Spin, Icon } from 'antd';
+
 /* Import css */
 import './layout.css';
 import './beautiCode.css';
 
-class IndexPage extends PureComponent {
-  constructor() {
-    super();
+class Layout extends PureComponent {
+  constructor(props) {
+    super(props);
   }
   render() {
     const { children } = this.props;
@@ -40,20 +40,19 @@ class IndexPage extends PureComponent {
             <header className="header-banner">
               <div className="container-width">
                 <nav className="menu">
-                  <div className="menu-item">BUILDER</div>
-                  <div className="menu-item">TEMPLATE</div>
-                  <div className="menu-item">WEB</div>
+                  <div className="menu-item">JAVASCRIPT</div>
+                  <div className="menu-item">ENGLISH</div>
                 </nav>
                 <div className="clearfix" />
                 <div className="lead-title">
-                  Build your templates without coding
+                  {/* Build your templates without coding */}
                 </div>
                 <div className="sub-lead-title">
-                  All text blocks could be edited easily with double clicking on
+                  {/* All text blocks could be edited easily with double clicking on
                   it. You can create new text blocks with the command from the
-                  left panel
+                  left panel */}
                 </div>
-                <div className="lead-btn">Hover me</div>
+                {/* <div className="lead-btn"></div> */}
               </div>
             </header>
             <section className="flex-sect">
@@ -64,7 +63,7 @@ class IndexPage extends PureComponent {
             </section>
             <section className="bdg-sect">
               <div className="container-width">
-                <h1 className="bdg-title">The team</h1>
+                <h1 className="bdg-title">Creator by</h1>
                 <div className="badges">
                   <div className="badge">
                     <div className="badge-header" />
@@ -100,7 +99,7 @@ class IndexPage extends PureComponent {
               <div className="container-width">
                 <div className="footer-container">
                   <div className="foot-lists">
-                    <div className="foot-list">
+                    {/* <div className="foot-list">
                       <div className="foot-list-title">About us</div>
                       <div className="foot-list-item">Contact</div>
                       <div className="foot-list-item">Events</div>
@@ -115,7 +114,7 @@ class IndexPage extends PureComponent {
                       <div className="foot-list-item">Community</div>
                       <div className="foot-list-item">Forum</div>
                       <div className="foot-list-item">Download</div>
-                    </div>
+                    </div> */}
                     <div className="clearfix" />
                   </div>
                   {/* <div className="form-sub">
@@ -159,4 +158,4 @@ class IndexPage extends PureComponent {
   }
 }
 
-export default IndexPage;
+export default Layout;

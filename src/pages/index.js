@@ -9,9 +9,9 @@ export default ({ data }) => {
     <Layout>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <div className="card" key={index}>
-          <div className="card-header" />
+          {/* <div className="card-header" /> */}
           <div className="card-body">
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            <Link style={{fontSize: 20, paddingBottom: 10}} to={node.fields.slug}>{node.frontmatter.title}</Link>
             <div className="card-sub-title">
               Created date: {node.frontmatter.date}
             </div>
