@@ -1,14 +1,14 @@
 /* Import lib */
-import React, { PureComponent } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React, { PureComponent } from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 /* Import css */
-import './layout.css';
-import './beautiCode.css';
+import "./layout.css";
+import "./formatFormLanguage.css";
 
 class Layout extends PureComponent {
-  constructor(props) {
-    super(props);
+  constructor(...props) {
+    super(...props);
   }
   render() {
     const { children } = this.props;
@@ -55,15 +55,18 @@ class Layout extends PureComponent {
                 {/* <div className="lead-btn"></div> */}
               </div>
             </header>
+
             <section className="flex-sect">
               <div className="container-width">
                 {/* <div className="flex-title">New Feed</div> */}
                 <div className="cards">{children}</div>
               </div>
             </section>
+
             <section className="bdg-sect">
               <div className="container-width">
                 <h1 className="bdg-title">Creator by</h1>
+
                 <div className="badges">
                   <div className="badge">
                     <div className="badge-header" />
@@ -81,6 +84,7 @@ class Layout extends PureComponent {
                         Success = Present + Effort
                       </div>
                     </div>
+
                     <div className="badge-foot">
                       <a
                         href="https://www.facebook.com/pktai.IoT"
@@ -95,52 +99,16 @@ class Layout extends PureComponent {
                 </div>
               </div>
             </section>
+
             <footer className="footer-under">
               <div className="container-width">
                 <div className="footer-container">
                   <div className="foot-lists">
-                    {/* <div className="foot-list">
-                      <div className="foot-list-title">About us</div>
-                      <div className="foot-list-item">Contact</div>
-                      <div className="foot-list-item">Events</div>
-                      <div className="foot-list-item">Company</div>
-                      <div className="foot-list-item">Jobs</div>
-                      <div className="foot-list-item">Blog</div>
-                    </div>
-                    <div className="foot-list">
-                      <div className="foot-list-title">Services</div>
-                      <div className="foot-list-item">Education</div>
-                      <div className="foot-list-item">Partner</div>
-                      <div className="foot-list-item">Community</div>
-                      <div className="foot-list-item">Forum</div>
-                      <div className="foot-list-item">Download</div>
-                    </div> */}
                     <div className="clearfix" />
                   </div>
-                  {/* <div className="form-sub">
-                    <div className="foot-form-cont">
-                      <div className="foot-form-title">Subscribe</div>
-                      <div className="foot-form-desc">
-                        Subscribe to our newsletter to receive exclusive offers
-                        and the latest news
-                      </div>
-                      <input
-                        name="name"
-                        placeholder="Name"
-                        className="sub-input"
-                      />
-                      <input
-                        name="email"
-                        placeholder="Email"
-                        className="sub-input"
-                      />
-                      <button type="button" className="sub-btn">
-                        Submit
-                      </button>
-                    </div>
-                  </div> */}
                 </div>
               </div>
+
               <div className="copyright">
                 <div className="container-width">
                   <div className="made-with">Made By Tai Pham @2019</div>
