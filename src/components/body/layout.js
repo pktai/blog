@@ -10,6 +10,7 @@ class Layout extends PureComponent {
   constructor(...props) {
     super(...props);
   }
+
   render() {
     const { children } = this.props;
     return (
@@ -21,6 +22,7 @@ class Layout extends PureComponent {
                 title
               }
             }
+
             topics: allMarkdownRemark(
               sort: { order: DESC, fields: [frontmatter___date] }
             ) {
@@ -35,6 +37,7 @@ class Layout extends PureComponent {
             }
           }
         `}
+
         render={data => (
           <>
             <header className="header-banner">
