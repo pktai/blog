@@ -1,6 +1,6 @@
 ---
 title: ES6 feature
-date: "2019-08-22T22:04:32.169Z"
+date: "2019-08-23T22:04:32.169Z"
 categories: ["javasript"]
 tags: ["javasript"]
 ---
