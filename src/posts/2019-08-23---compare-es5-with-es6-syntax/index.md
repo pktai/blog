@@ -104,3 +104,15 @@ parseInt("111110111", 2) === 503;
 parseInt("767", 8) === 503;
 0767 === 503; // only in non-strict, backward compatibility mode
 ```
+###Enhanced Object Properties
+####Property Shorthand
+Shorter syntax for common object property definition idiom.
+####ES6
+```javascript
+var x = 0, y = 0
+obj = { x, y }
+```
+####ES5
+```javascript
+var x = 0, y = 0;
+obj = { x: x, y: y };
