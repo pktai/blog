@@ -116,3 +116,48 @@ obj = { x, y }
 ```javascript
 var x = 0, y = 0;
 obj = { x: x, y: y };
+```
+Support for computed names in object property definitions.
+####ES6
+```javascript
+let obj = {
+    foo: "bar",
+    [ "baz" + quux() ]: 42
+}
+```
+####ES5
+```javascript
+var obj = {
+    foo: "bar"
+};
+obj[ "baz" + quux() ] = 42;
+```
+Support for method notation in object property definitions, for both regular functions and generator functions.
+
+####ES6
+```javascript
+obj = {
+    foo (a, b) {
+        …
+    },
+    bar (x, y) {
+        …
+    },
+    *quux (x, y) {
+        …
+    }
+}
+```
+ES5
+```javascript
+obj = {
+    foo: function (a, b) {
+        …
+    },
+    bar: function (x, y) {
+        …
+    },
+    //  quux: no equivalent in ES5
+    …
+};
+```
