@@ -161,3 +161,48 @@ obj = {
     …
 };
 ```
+####String Searching
+New specific string functions to search for a sub-string.
+####ES6
+```javascript
+"hello".startsWith("ello", 1) // true
+"hello".endsWith("hell", 4)   // true
+"hello".includes("ell")       // true
+"hello".includes("ell", 1)    // true
+"hello".includes("ell", 2)    // false
+```
+####ES5
+```javascript
+"hello".indexOf("ello") === 1;    // true
+"hello".indexOf("hell") === (4 - "hell".length); // true
+"hello".indexOf("ell") !== -1;    // true
+"hello".indexOf("ell", 1) !== -1; // true
+"hello".indexOf("ell", 2) !== -1; // false
+```
+####Number Type Checking
+####ES6
+```javascript
+Number.isNaN(42) === false
+Number.isNaN(NaN) === true
+
+Number.isFinite(Infinity) === false
+Number.isFinite(-Infinity) === false
+Number.isFinite(NaN) === false
+Number.isFinite(123) === true
+```
+####ES5
+```javascript
+var isNaN = function (n) {
+    return n !== n;
+};
+var isFinite = function (v) {
+    return (typeof v === "number" && !isNaN(v) && v !== Infinity && v !== -Infinity);
+};
+isNaN(42) === false;
+isNaN(NaN) === true;
+
+isFinite(Infinity) === false;
+isFinite(-Infinity) === false;
+isFinite(NaN) === false;
+isFinite(123) === true;
+```
