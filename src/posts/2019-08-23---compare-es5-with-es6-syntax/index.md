@@ -220,3 +220,31 @@ var list = [ 1, 2, 3 ];
 var a = list[0], b = list[2];
 var tmp = a; a = b; b = tmp;
 ```
+####Object Matching, Shorthand Notation
+
+Intuitive and flexible destructuring of Objects into individual variables during assignment.
+
+####ES6
+```javascript
+var { op, lhs, rhs } = getASTNode()
+```
+####ES5
+```javascript
+var tmp = getASTNode();
+var op  = tmp.op;
+var lhs = tmp.lhs;
+var rhs = tmp.rhs;
+```
+####Object Matching, Deep Matching
+Intuitive and flexible destructuring of Objects into individual variables during assignment.
+####ES6
+```javascript
+var { op: a, lhs: { op: b }, rhs: c } = getASTNode()
+```
+####ES5
+```javascript
+var tmp = getASTNode();
+var a = tmp.op;
+var b = tmp.lhs.op;
+var c = tmp.rhs;
+````
