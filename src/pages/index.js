@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 // import { Tag } from 'antd';
-import Layout from '../components/body/layout';
-import { graphql, Link } from 'gatsby';
-import './pages.css';
+import Layout from "../components/body/layout";
+import { graphql, Link } from "gatsby";
+import "./pages.css";
 
 export default ({ data }) => {
   return (
@@ -11,15 +11,23 @@ export default ({ data }) => {
         <div className="card" key={index}>
           {/* <div className="card-header" /> */}
           <div className="card-body">
-            <Link
-              style={{ fontSize: 20, paddingBottom: 10 }}
-              to={node.fields.slug}
-            >
+            <Link className="link-card" to={node.fields.slug}>
               {node.frontmatter.title}
             </Link>
             <div className="card-sub-title">{node.frontmatter.date}</div>
             <div className="card-desc">{node.excerpt}</div>
           </div>
+          {
+            <div className="tag-cus">
+              {node.frontmatter.tags.map((item, index) => (
+                <ul className="tags" key={index}>
+                  <li>
+                    <span className="tag">{item}</span>
+                  </li>
+                </ul>
+              ))}
+            </div>
+          }
         </div>
         // <div key={index}>
         //   <h3 />
