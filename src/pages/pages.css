@@ -10,18 +10,19 @@
 }
 
 .tag {
-	background: #eee;
+	background: rgb(9, 136, 196);
 	border-radius: 3px 0 0 3px;
-	color: #999;
+	color: #fff;
 	display: inline-block;
-	height: 26px;
-	line-height: 26px;
+	height: 20px;
+	line-height: 18px;
 	padding: 0 20px 0 23px;
 	position: relative;
 	margin: 0 10px 10px 0;
 	text-decoration: none;
 	cursor: context-menu;
 	transition: color 0.2s;
+	font-size: 12px;
 }
 
 .tag::before {
@@ -33,14 +34,14 @@
 	left: 10px;
 	position: absolute;
 	width: 6px;
-	top: 10px;
+	top: 6px;
 }
 
 .tag::after {
 	background: #fff;
-	border-bottom: 13px solid transparent;
-	border-left: 10px solid #eee;
-	border-top: 13px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid rgb(9, 136, 196);
+	border-top: 10px solid transparent;
 	content: '';
 	position: absolute;
 	right: 0;
