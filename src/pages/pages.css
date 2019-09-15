@@ -49,12 +49,12 @@
 }
 
 .tag:hover {
-	background-color: rgb(9, 136, 196);
+	background-color: rgb(9, 153, 219);
 	color: white;
 }
 
 .tag:hover::after {
-	border-left-color: rgb(9, 136, 196);
+	border-left-color: rgb(9, 153, 219);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');

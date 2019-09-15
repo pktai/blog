@@ -38,6 +38,7 @@ pre[class*="language-"]>code {
 	background-origin: content-box;
 	background-attachment: local;
 	/* padding: 15px; */
+	font-size: 12.5px;
 }
 
 code[class*="language"] {
