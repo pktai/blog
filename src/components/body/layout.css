@@ -23,8 +23,8 @@ body {
 }
 
 .container-width {
-	width: 90%;
-	max-width: 1150px;
+	width: 60%;
+	/* max-width: 1150px; */
 	margin: 0 auto;
 	text-align: center;
 }
@@ -542,6 +542,9 @@ body {
 
 	.card-sub-title {
 		display: none;
+	}
+	.container-width{
+		width:  90%;
 	}
 }
 
