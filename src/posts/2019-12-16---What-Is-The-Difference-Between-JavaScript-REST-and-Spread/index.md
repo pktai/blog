@@ -1,12 +1,9 @@
 ---
-title: use webpack with reactJs
-date: "2019-08-05T17:40:32.169Z"
-categories: ["reactjs", "webpack"]
-tags: ["webpack"]
+title: What Is The Difference Between JavaScript REST and Spread
+date: "2019-12-16T13:40:32.169Z"
+categories: ["Javascript"]
+tags: ["Javascript"]
 ---
-đọc document trên trang https://webpack.js.org/
-
-
 In this article, we are going to learn what is the difference between the Javascript REST and Spread. ES6 introduced the three dots(…) syntax in the Javascript and can be used depending upon the context, as a REST or Spread operator.
 
 In short, REST collects all the remaining elements into an array while Spread operator allows arrays/objects/strings to be expanded into single arguments/elements.
