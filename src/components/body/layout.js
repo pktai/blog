@@ -106,7 +106,7 @@ class Layout extends PureComponent {
 
               <div className="copyright">
                 <div className="container-width">
-                  <div className="made-with">Made By Tai Pham @2019</div>
+                  <div className="made-with">Made By Tai Pham @2020</div>
                   <div className="foot-social-btns">
                     facebook twitter linkedin mail
                   </div>
