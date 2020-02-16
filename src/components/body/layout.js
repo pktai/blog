@@ -1,16 +1,12 @@
 /* Import lib */
-import React, { PureComponent } from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React, { PureComponent } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
 /* Import css */
-import "./layout.css";
-import "./formatFormLanguage.css";
+import './layout.css';
+import './formatFormLanguage.css';
 
 class Layout extends PureComponent {
-  constructor(...props) {
-    super(...props);
-  }
-
   render() {
     const { children } = this.props;
     return (
@@ -72,10 +68,7 @@ class Layout extends PureComponent {
                 <div className="badges">
                   <div className="badge">
                     <div className="badge-header" />
-                    <img
-                      // src="/src/images/TaiPham.jpg"
-                      className="badge-avatar"
-                    />
+                    <div className="badge-avatar" />
                     <div className="badge-body">
                       <div className="badge-name">Tai Pham</div>
                       <div className="badge-role">Full Stack Javascript</div>

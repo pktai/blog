@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 // import { Tag } from 'antd';
-import Layout from "../components/body/layout";
-import { graphql, Link } from "gatsby";
-import "./pages.css";
+import Layout from '../components/body/layout';
+import { graphql, Link } from 'gatsby';
+import './pages.css';
 
 export default ({ data }) => {
   return (

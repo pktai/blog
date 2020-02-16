@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
@@ -25,15 +25,15 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-javascript",
+              classPrefix: 'language-javascript',
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
               languageExtensions: [
                 {
-                  language: "javascript",
-                  extend: "javascript",
+                  language: 'javascript',
+                  extend: 'javascript',
                   definition: {
                     superscript_types: /(SuperType)/,
                   },
@@ -45,16 +45,16 @@ module.exports = {
                 },
               ],
             },
-          },  
+          },
         ],
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        display: "standalone",
-        icon: "./src/images/favicon.png",
-      }
+        display: 'standalone',
+        icon: './src/images/favicon.png',
+      },
     },
   ],
-}
+};
