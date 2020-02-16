@@ -1,8 +1,8 @@
 ---
 title: Three dots ( … ) in JavaScript
 date: "2019-08-13T21:40:32.169Z"
-categories: ["javascript", "reactJs"]
-tags: ["javascript"]
+categories: ["Javascript", "ReactJS"]
+tags: ["Javascript"]
 ---
 In this article, we are going to discuss a feature introduced in ES6 that is spread operator and rest operator. 🔥 🔥 🔥
 I've become a big fan of the three dots that may change your style of solving the problem within JavaScript. We can use three dots … in two different ways as spread operator and rest operator.

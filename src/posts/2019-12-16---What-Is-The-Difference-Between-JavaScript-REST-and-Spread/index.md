@@ -95,6 +95,6 @@ At first, it is very difficult to understand the difference between the javascri
 
 Even sometimes, it is very difficult for experienced developers to understand the new javascript syntax.
 
-Both Javascript rest and spread used the same three dots (…) syntax, as a recap, if you want to expand the elements of the iterable elements then use the Spread operator and if you want to collect the elements then you can use the REST parameter of the javascript.
+Both Javascript rest and spread used the same three dots (…) syntax, as a recap, if you want to expand the elements of the iterable elements then use the Spread operator and if you want to collect the elements then you can use the REST parameter of the Javascript.
 
-I hope this article helps you to understand these two concepts of javascript. If you have any doubts and suggestion then comment in the comment box.
+I hope this article helps you to understand these two concepts of Javascript. If you have any doubts and suggestion then comment in the comment box.

@@ -1,10 +1,10 @@
 ---
-title: immutable on javascript 
+title: Immutable on javascript 
 date: "2019-08-06T16:40:32.169Z"
-categories: ["immutable", "javascript"]
-tags: ["immutable"]
+categories: ["Immutable", "javascript"]
+tags: ["Immutable"]
 ---
-immutable targer: để tối ưu performace trong source.
+Immutable targer: để tối ưu performace trong source.
 luu y cach su dung Object.assign.
 ```javascript
 let A = [1, 2, 3];

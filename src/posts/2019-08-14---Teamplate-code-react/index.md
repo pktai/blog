@@ -1,8 +1,8 @@
 ---
 title: a litle template function on react
 date: "2019-08-14T17:14:32.169Z"
-categories: ["reactJs"]
-tags: ["reactJs"]
+categories: ["ReactJS"]
+tags: ["ReactJS"]
 ---
 
 ```javascript

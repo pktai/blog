@@ -1,8 +1,8 @@
 ---
 title: Passing Functions to Components
 date: "2019-08-25T21:44:32.169Z"
-categories: ["reactjs"]
-tags: ["reactjs"]
+categories: ["ReactJS"]
+tags: ["ReactJS"]
 ---
 ###Example:
 

@@ -1,8 +1,8 @@
 ---
 title: create Object va assgin Object su khac nhau
 date: "2019-08-07T19:40:32.169Z"
-categories: ["javascript"]
-tags: ["javascript"]
+categories: ["Javascript"]
+tags: ["Javascript"]
 ---
 Các thuộc tính trên chuỗi nguyên mẫu và các 
 thuộc tính không có khả năng đếm được thì không thể sao chép. 

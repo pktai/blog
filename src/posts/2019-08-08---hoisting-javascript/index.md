@@ -1,8 +1,8 @@
 ---
 title: hoisting javascript
 date: "2019-08-08T20:40:32.169Z"
-categories: ["javascript"]
-tags: ["javascript"]
+categories: ["Javascript"]
+tags: ["Javascript"]
 ---
 Hoisting là khái niệm chỉ việc mọi khai báo biến (với từ khóa var) sẽ được chuyển lên trên cùng của hàm. Để chứng minh chúng ta sẽ thực hiện những ví dụ dưới đây: Ta có 1 function như sau:
 ```javascript

@@ -1,8 +1,8 @@
 ---
-title: use function clone() on momentJs
+title: use function clone() on MomentJs
 date: "2019-08-06T15:40:32.169Z"
-categories: ["momentJs", "javascript"]
-tags: ["momentJs"]
+categories: ["MomentJs", "javascript"]
+tags: ["MomentJs"]
 ---
 ```javascript
 var a = moment([2012]);

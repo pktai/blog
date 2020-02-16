@@ -1,10 +1,10 @@
 ---
-title: If-else javascript
+title: If-else Javascript
 date: "2019-09-25T16:04:32.169Z"
-categories: ["javasript"]
-tags: ["javasript"]
+categories: ["Javascript"]
+tags: ["Javascript"]
 ---
-###If Else javascript
+###If Else Javascript
 ####ES6
 ```javascript
 function checkBoolean() {

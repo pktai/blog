@@ -1,7 +1,7 @@
 ---
 title: React Hook
 date: "2019-08-22T22:04:32.169Z"
-categories: ["reactJS"]
+categories: ["ReactJS"]
 tags: ["ReactJS"]
 ---
 ###Using the State Hook
