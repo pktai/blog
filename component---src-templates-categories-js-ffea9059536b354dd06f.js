@@ -1,10 +1,10 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [5],
   {
-    189: function(e, a, t) {
+    189: function (e, a, t) {
       'use strict';
       t.r(a),
-        t.d(a, 'query', function() {
+        t.d(a, 'query', function () {
           return o;
         });
       t(130), t(131);
@@ -12,17 +12,17 @@
         n = t.n(r),
         c = t(194),
         s = t(193);
-      a.default = function(e) {
+      a.default = function (e) {
         var a = e.data,
           t = e.pageContext.category,
-          r = a.allMarkdownRemark.edges.filter(function(e) {
+          r = a.allMarkdownRemark.edges.filter(function (e) {
             return e.node.frontmatter.categories.includes(t);
           });
         return n.a.createElement(
           c.a,
           null,
           n.a.createElement('h1', null, 'Chuyên mục ', t),
-          r.map(function(e, a) {
+          r.map(function (e, a) {
             var t = e.node;
             return n.a.createElement(
               'div',
@@ -49,20 +49,20 @@
       };
       var o = '3334298382';
     },
-    192: function(e, a, t) {
+    192: function (e, a, t) {
       var r;
       e.exports = ((r = t(196)) && r.default) || r;
     },
-    193: function(e, a, t) {
+    193: function (e, a, t) {
       'use strict';
-      t.d(a, 'b', function() {
+      t.d(a, 'b', function () {
         return i;
       });
       var r = t(0),
         n = t.n(r),
         c = t(66),
         s = t.n(c);
-      t.d(a, 'a', function() {
+      t.d(a, 'a', function () {
         return s.a;
       });
       t(192), t(7).default.enqueue;
@@ -80,12 +80,12 @@
           !s && n.a.createElement('div', null, 'Loading (StaticQuery)'),
         );
       }
-      var i = function(e) {
+      var i = function (e) {
         var a = e.data,
           t = e.query,
           r = e.render,
           c = e.children;
-        return n.a.createElement(o.Consumer, null, function(e) {
+        return n.a.createElement(o.Consumer, null, function (e) {
           return n.a.createElement(l, {
             data: a,
             query: t,
@@ -95,14 +95,14 @@
         });
       };
     },
-    194: function(e, a, t) {
+    194: function (e, a, t) {
       'use strict';
       var r = t(195),
         n = t(0),
         c = t.n(n),
         s = t(193);
       t(197), t(198);
-      var o = (function(e) {
+      var o = (function (e) {
         var a, t;
         function n() {
           for (var a = arguments.length, t = new Array(a), r = 0; r < a; r++)
@@ -114,11 +114,11 @@
           ((a = n).prototype = Object.create(t.prototype)),
           (a.prototype.constructor = a),
           (a.__proto__ = t),
-          (n.prototype.render = function() {
+          (n.prototype.render = function () {
             var e = this.props.children;
             return c.a.createElement(s.b, {
               query: '4010628437',
-              render: function(a) {
+              render: function (a) {
                 return c.a.createElement(
                   c.a.Fragment,
                   null,
@@ -270,19 +270,19 @@
       })(n.PureComponent);
       a.a = o;
     },
-    195: function(e) {
+    195: function (e) {
       e.exports = JSON.parse(
         '{"data":{"site":{"siteMetadata":{"title":"Gatsby Blog Tutorial Demo"}},"topics":{"edges":[{"node":{"frontmatter":{"categories":["reactjs"],"tags":["reactjs"]}}},{"node":{"frontmatter":{"categories":["javasript"],"tags":["javasript"]}}},{"node":{"frontmatter":{"categories":["reactJS"],"tags":["ReactJS"]}}},{"node":{"frontmatter":{"categories":["postgreSql"],"tags":["postgreSql"]}}},{"node":{"frontmatter":{"categories":["reactJs"],"tags":["reactJs"]}}},{"node":{"frontmatter":{"categories":["javascript","reactJs"],"tags":["javascript"]}}},{"node":{"frontmatter":{"categories":["javascript"],"tags":["javascript"]}}},{"node":{"frontmatter":{"categories":["javascript"],"tags":["javascript"]}}},{"node":{"frontmatter":{"categories":["immutable","javascript"],"tags":["javascript"]}}},{"node":{"frontmatter":{"categories":["immutable","javascript"],"tags":["immutable"]}}},{"node":{"frontmatter":{"categories":["momentJs","javascript"],"tags":["momentJs"]}}},{"node":{"frontmatter":{"categories":["nodeJS"],"tags":["nodeJS"]}}},{"node":{"frontmatter":{"categories":["reactjs"],"tags":["reactjs"]}}},{"node":{"frontmatter":{"categories":["reactjs","webpack"],"tags":["webpack"]}}},{"node":{"frontmatter":{"categories":["reactjs","redux"],"tags":["redux"]}}},{"node":{"frontmatter":{"categories":["reactjs"],"tags":["reactjs"]}}},{"node":{"frontmatter":{"categories":["javascript"],"tags":["javascript"]}}},{"node":{"frontmatter":{"categories":["sequelize"],"tags":["back end","node js","sequelize"]}}}]}}}',
       );
     },
-    196: function(e, a, t) {
+    196: function (e, a, t) {
       'use strict';
       t.r(a);
       t(22);
       var r = t(0),
         n = t.n(r),
         c = t(90);
-      a.default = function(e) {
+      a.default = function (e) {
         var a = e.location,
           t = e.pageResources;
         return t
