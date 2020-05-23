@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       let tags = [];
       let categories = [];
 
@@ -60,7 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
 
-      categories.forEach(category => {
+      categories.forEach((category) => {
         createPage({
           path: `/category/${slug(category).toLowerCase()}/`,
           component: path.resolve(`./src/templates/categories.js`),
@@ -71,7 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
 
-      tags.forEach(tag => {
+      tags.forEach((tag) => {
         createPage({
           path: `/tag/${slug(tag).toLowerCase()}/`,
           component: path.resolve(`./src/templates/tags.js`),

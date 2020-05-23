@@ -33,7 +33,7 @@ class Layout extends PureComponent {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             <header className="header-banner">
               <div className="container-width">

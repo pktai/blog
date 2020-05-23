@@ -18,7 +18,7 @@ It allows us to represent an indefinite number of arguments passed to a function
 
 Rest Parameter Example
 
-```
+```javascript
 function testRest(x,y,...z){
     console.log(x);  // a
     console.log(y);  // b
@@ -31,7 +31,7 @@ We can separately define the arguments in the function and remaining elements in
 
 Before the ES6 Rest parameter, there is an arguments keyword which people are using to get all the arguments in the function.
 
-```
+```javascript
 function testArgumentsKeyword(){ 
     console.log(arguments.length); // 2
     console.log(arguments[0]);     // arg1
@@ -52,7 +52,7 @@ The Javascript spread operator is just the opposite of the rest parameter. It ex
 Let’s understand the Javascript spread operator with some examples.
 
 adding new elements to an existing array
-```
+```javascript
 const arr = ['ele1','ele2', 'ele3'];
 
 const newArr = [...arr, ele4];
@@ -67,7 +67,7 @@ Combing two or more array in Javascript
 
 By using the spread operator, you can easily combine the two or more array into a single array.
 
-```
+```javascript
 const arr1 = [a,b,c,d];
 const arr2 = [e,f,g,h];
 
@@ -81,7 +81,7 @@ Deep Copying an Array
 
 You can easily use deep copying of an array using the spread operator.
 
-```
+```javascript
 const arr = [a,b,c,d];
 
 const deepCopyArr = [...arr];
