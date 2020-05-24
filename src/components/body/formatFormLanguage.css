@@ -122,10 +122,13 @@ pre[class*='language-']:after {
 .token.attr-name,
 .token.string,
 .token.char,
-.token.function,
 .token.builtin,
 .token.inserted {
-  color: #cfae5a;
+  color: #daa214;
+}
+
+.token.function{
+  color: #ded950;
 }
 
 .token.operator,
